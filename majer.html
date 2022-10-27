@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="gravarDados.php" method="post" enctype="multipart/form-data">
+        Nome:
+    <input type="text" name="nome" maxlenght="15" size="20">
+    
+    E-mail:
+    <input type="text" name="email" maxlenght="15" size="20">
+    <br>
+    Telefone:
+    <input type="tel" name="telefone" maxlength="15">
+    Data de nascimento:
+    <input type="date" name="nascimento" maxlength="15">
+    RG:
+    <input type="doctype" name="rg" maxlenght="15">
+    Data da consulta:
+    <input type="date" name="agendamento" maxlength="15" size="30">
+    <br>
+    Sexo:
+    <input type="radio" name="sexo" value="M" checked="">
+    Masculino
+    <input type="radio" name="sexo" value="F">
+    Feminino
+    Horário da consulta:
+    <input type="hour" name="hora" maxlength="15">
+    <br>
+    Estado:
+    <select name="uf">
+        <option value="RO">Rondônia</option>
+        <option value="AC">Acre</option>
+        <option value="AM">Amazonas</option>
+        <option value="RR">Roraima</option>
+        <option value="PA">Pará</option>
+        <option value="AP">Amapá</option>
+        <option value="TO">Tocantins</option>
+        <option value="MA">Maranhão</option>
+        <option value="PI">Piauí</option>
+        <option value="CE">Ceará</option>
+        <option value="RN">Rio Grande do Norte</option>
+        <option value="PB">Paraíba</option>
+        <option value="PE">Pernambuco</option>
+        <option value="AL">Alagoas</option>
+        <option value="SE">Sergipe</option>
+        <option value="BA">Bahia</option>
+        <option value="MG">Minas Gerais</option>
+        <option value="ES">Espírito Santo</option>
+        <option value="RJ">Rio de Janeiro</option>
+        <option value="SP">São Paulo</option>
+        <option value="PR">Paraná</option>
+        <option value="SC">Santa Catarina</option>
+        <option value="RS">Rio Grande do Sul</option>
+        <option value="MS">Mato Grosso do Sul</option>
+        <option value="MT">Mato Grosso</option>
+        <option value="GO">Goiás</option>
+        <option value="DF">Distrito Federal</option>
+        
+    </select>
+    <br>
+    Doença crônica:
+    <input type="checkbox" name="doenca">
+    <br>
+    Foto Rg (Frente e verso)
+    <br>
+    <input type="file" name="foto-frente">
+    <br>
+    <input type="file" name="foto-verso">
+    <br>
+    <hr>
+    Descrição:
+    <textarea name="prontuario" rows="5" cols="80"></textarea>
+    <hr>
+    <input type="submit" value="Agendar">
+    <input type="reset" value="Limpar Campos">
+    </form>
+</body>
+</html>
